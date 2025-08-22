@@ -3,4 +3,5 @@
 https://firmware-selector.openwrt.org/?version=24.10.2&target=ramips%2Fmt7621&id=netis_n6  
 Самые необходимые базовые пакеты:  
 ```
+base-files fstools mtd libc libgcc urandom-seed urngd uci netifd dropbear firewall4 nftables dnsmasq wpad-basic-mbedtls kmod-mt7915-firmware kmod-usb3
 ```
