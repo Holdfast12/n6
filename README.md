@@ -8,5 +8,5 @@ base-files fstools mtd libc libgcc urandom-seed urngd uci netifd dropbear firewa
 пакет xmm-modem ставим отдельно от всего
 Дополнительные пакеты:
 ```
-sudo xray-core
+sudo xray-core kmod-nft-tproxy
 ```
