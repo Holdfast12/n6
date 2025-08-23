@@ -8,7 +8,7 @@ base-files ca-bundle dnsmasq dropbear firewall4 fstools kmod-nft-offload libc li
 пакет xmm-modem ставим отдельно от всего
 Дополнительные пакеты:
 ```
-kmod-nft-tproxy
+scp kmod-nft-tproxy python3-light python3-urllib
 ```
 Установка вручную:
 ```
