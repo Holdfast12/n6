@@ -8,9 +8,12 @@ base-files fstools mtd libc libgcc urandom-seed urngd uci netifd dropbear firewa
 пакет xmm-modem ставим отдельно от всего
 Дополнительные пакеты:
 ```
-xray-core kmod-nft-tproxy
+xray-core kmod-nft-tproxy python3-light
 ```
 ```
 uci set system.@system[0].hostname="router"
 uci set system.@system[0].timezone='MSK-3'
+uci set dropbear.@dropbear[0].Port=2000
+uci set network.lan.ipaddr='192.168.3.1'
+
 ```
