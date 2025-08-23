@@ -19,9 +19,6 @@ uci set system.@system[0].hostname="router"
 uci set system.@system[0].timezone='MSK-3'
 uci commit system
 /etc/init.d/system restart
-uci set dropbear.@dropbear[0].Port=2000
-uci commit dropbear
-/etc/init.d/dropbear restart
 uci set network.lan.ipaddr='192.168.3.1'
 uci commit network
 /etc/init.d/network restart
