@@ -10,3 +10,7 @@ base-files fstools mtd libc libgcc urandom-seed urngd uci netifd dropbear firewa
 ```
 xray-core kmod-nft-tproxy
 ```
+```
+uci set system.@system[0].hostname="router"
+uci set system.@system[0].timezone='MSK-3'
+```
