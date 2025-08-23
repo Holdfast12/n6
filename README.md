@@ -8,7 +8,11 @@ base-files ca-bundle dnsmasq dropbear firewall4 fstools kmod-nft-offload libc li
 пакет xmm-modem ставим отдельно от всего
 Дополнительные пакеты:
 ```
-xray-core kmod-nft-tproxy python3-light
+kmod-nft-tproxy
+```
+Установка вручную:
+```
+xray-core python3
 ```
 ```
 uci set system.@system[0].hostname="router"
