@@ -10,10 +10,6 @@ base-files ca-bundle dnsmasq dropbear firewall4 fstools kmod-nft-offload libc li
 ```
 kmod-nft-tproxy rsync
 ```
-Установка вручную:
-```
-python3
-```
 ```
 uci set system.@system[0].hostname="router"
 uci set system.@system[0].timezone='MSK-3'
