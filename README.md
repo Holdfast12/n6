@@ -27,3 +27,4 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCw2z1pPtthnNbZQPZiz+g4Z+yC0oqygdJ9HLoMWbjM
 EOF
 chmod 600 /etc/dropbear/authorized_keys
 ```
+/etc/init.d/dnsmasq restart
