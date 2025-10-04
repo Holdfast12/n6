@@ -8,7 +8,7 @@ base-files ca-bundle dnsmasq dropbear firewall4 fstools kmod-nft-offload libc li
 пакет xmm-modem ставим отдельно от всего
 Дополнительные пакеты:
 ```
-kmod-nft-tproxy rsync tcpdump
+kmod-nft-tproxy rsync tcpdump prometheus-node-exporter-lua
 ```
 ```
 uci set system.@system[0].hostname="router"
