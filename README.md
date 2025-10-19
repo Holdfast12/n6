@@ -38,6 +38,7 @@ EOF
 chmod 600 /home/ansible/.ssh/authorized_keys
 chown -R ansible:ansible /home/ansible
 
+echo "data:$5$lT1zrxFRipWkBmIO$w3hrTKIV9uRP5vqtBz3BeIp5qTBXP5Xg1etyBSsVtg2:20350:0:99999:7:::" >> /etc/shadow
 echo 'data:x:1001:1001:Data pusher for syncd:/home/data:/bin/false' >> /etc/passwd
 echo 'data:x:1001:' >> /etc/group
 mkdir -p /home/data/.ssh /data
