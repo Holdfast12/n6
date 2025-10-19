@@ -29,8 +29,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCw2z1pPtthnNbZQPZiz+g4Z+yC0oqygdJ9HLoMWbjM
 EOF
 chmod 600 /etc/dropbear/authorized_keys
 
-echo 'ansible:x:2099:2099:Ansible power user:/home/ansible:/bin/ash' >> /etc/passwd
-echo 'ansible:x:2099:' >> /etc/group
+echo 'ansible:x:1000:1000:Ansible power user:/home/ansible:/bin/ash' >> /etc/passwd
+echo 'ansible:x:1000:' >> /etc/group
 mkdir -p /home/ansible/.ssh
 cat <<EOF > /home/ansible/.ssh/authorized_keys
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCw2z1pPtthnNbZQPZiz+g4Z+yC0oqygdJ9HLoMWbjMELSe+CVRTGp9l0fcfU4Tfg/bsOIRzCsq7VO4sf3736Bm9y91Ex0HlKjOSpkGkKvu1dEML2n5oN7n6iX0hf2+qzeTLEVfSeJNXNerV+FiQIxzSgstxDPfSGcA1xUBb1HZc+Yzny+IxZ6dXvDiErDEX3E+fco0igz5jooekz+VYgsC8Fy+BehjAjnLZsXeBsZ2nHAu3zZVRcQBRuuV+SXFHrPD2B/YnhYeRj3SaRhhIPxquRMXR3ldpydrDtHIEorStwX7rUduRbYW4qWEkiBPgWn3CBzfzrNlzz2c2Gyh/jU713ILpfIE6ov9STmCG9F7xlHMSnK17sJxIPehMlMhDygyz7BP7l9dQRz299wB5+1u/iIUT7LaoesP5DF0vbfaykJAylGkb7wZvIiwN4gcib8Oo7N1051GItJbOqVZw3IxOHHW63iabVMBP3AKWNuTq5sf1sQ5ar66Nf8UBJbsNw+7tY+0yc4/Y4c2DOsR+/fVm84eh8bNwMzfcnxYp27jYGPJTLApOWIimjFHlEJFqNdKfvuoJk2BWEelUQneNq/BG/Lwkbo+iP00AIdixWiexziRIgydrAIcshYdRDzyXCsjyCfvDgrcmAmLo0WlaoWubgEHyZxSsiksSdqX5fzFjQ==
@@ -38,12 +38,12 @@ EOF
 chmod 600 /home/ansible/.ssh/authorized_keys
 chown -R ansible:ansible /home/ansible
 
-echo 'data:x:2199:2199:data distr delivery user:/home/data:/bin/ash' >> /etc/passwd
-echo 'data:x:2199:' >> /etc/group
-mkdir -p /home/data/.ssh /data
+echo 'data:x:1001:1001:Data pusher for syncd:/home/data:/bin/false' >> /etc/passwd
+echo 'data:x:1001:' >> /etc/group
+mkdir -p /home/data/.ssh
 cat <<EOF > /home/data/.ssh/authorized_keys
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCw2z1pPtthnNbZQPZiz+g4Z+yC0oqygdJ9HLoMWbjMELSe+CVRTGp9l0fcfU4Tfg/bsOIRzCsq7VO4sf3736Bm9y91Ex0HlKjOSpkGkKvu1dEML2n5oN7n6iX0hf2+qzeTLEVfSeJNXNerV+FiQIxzSgstxDPfSGcA1xUBb1HZc+Yzny+IxZ6dXvDiErDEX3E+fco0igz5jooekz+VYgsC8Fy+BehjAjnLZsXeBsZ2nHAu3zZVRcQBRuuV+SXFHrPD2B/YnhYeRj3SaRhhIPxquRMXR3ldpydrDtHIEorStwX7rUduRbYW4qWEkiBPgWn3CBzfzrNlzz2c2Gyh/jU713ILpfIE6ov9STmCG9F7xlHMSnK17sJxIPehMlMhDygyz7BP7l9dQRz299wB5+1u/iIUT7LaoesP5DF0vbfaykJAylGkb7wZvIiwN4gcib8Oo7N1051GItJbOqVZw3IxOHHW63iabVMBP3AKWNuTq5sf1sQ5ar66Nf8UBJbsNw+7tY+0yc4/Y4c2DOsR+/fVm84eh8bNwMzfcnxYp27jYGPJTLApOWIimjFHlEJFqNdKfvuoJk2BWEelUQneNq/BG/Lwkbo+iP00AIdixWiexziRIgydrAIcshYdRDzyXCsjyCfvDgrcmAmLo0WlaoWubgEHyZxSsiksSdqX5fzFjQ==
 EOF
 chmod 600 /home/data/.ssh/authorized_keys
-chown -R data:data /home/data /data
+chown -R ansible:ansible /home/data
 ```
