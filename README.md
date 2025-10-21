@@ -40,7 +40,7 @@ chown -R ansible:ansible /home/ansible
 
 echo "data:$5$lT1zrxFRipWkBmIO$w3hrTKIV9uRP5vqtBz3BeIp5qTBXP5Xg1etyBSsVtg2:20350:0:99999:7:::" >> /etc/shadow
 echo 'data:x:1001:1001:Data pusher for syncd:/home/data:/bin/false' >> /etc/passwd
-echo 'data:x:1001:' >> /etc/group
+echo 'data:x:1001:dnsmasq' >> /etc/group
 mkdir -p /home/data/.ssh /data
 cat <<EOF > /home/data/.ssh/authorized_keys
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCw2z1pPtthnNbZQPZiz+g4Z+yC0oqygdJ9HLoMWbjMELSe+CVRTGp9l0fcfU4Tfg/bsOIRzCsq7VO4sf3736Bm9y91Ex0HlKjOSpkGkKvu1dEML2n5oN7n6iX0hf2+qzeTLEVfSeJNXNerV+FiQIxzSgstxDPfSGcA1xUBb1HZc+Yzny+IxZ6dXvDiErDEX3E+fco0igz5jooekz+VYgsC8Fy+BehjAjnLZsXeBsZ2nHAu3zZVRcQBRuuV+SXFHrPD2B/YnhYeRj3SaRhhIPxquRMXR3ldpydrDtHIEorStwX7rUduRbYW4qWEkiBPgWn3CBzfzrNlzz2c2Gyh/jU713ILpfIE6ov9STmCG9F7xlHMSnK17sJxIPehMlMhDygyz7BP7l9dQRz299wB5+1u/iIUT7LaoesP5DF0vbfaykJAylGkb7wZvIiwN4gcib8Oo7N1051GItJbOqVZw3IxOHHW63iabVMBP3AKWNuTq5sf1sQ5ar66Nf8UBJbsNw+7tY+0yc4/Y4c2DOsR+/fVm84eh8bNwMzfcnxYp27jYGPJTLApOWIimjFHlEJFqNdKfvuoJk2BWEelUQneNq/BG/Lwkbo+iP00AIdixWiexziRIgydrAIcshYdRDzyXCsjyCfvDgrcmAmLo0WlaoWubgEHyZxSsiksSdqX5fzFjQ==
