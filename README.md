@@ -1,6 +1,6 @@
 # n6
 настройки для прошивки роутера netis n6  
-<a href="https://firmware-selector.openwrt.org/?version=24.10.5&target=ramips%2Fmt7621&id=netis_n6" target="_blank">ПЕРЕЙТИ К СБОРКЕ</a>  
+<a href="https://firmware-selector.openwrt.org/?version=24.10.4&target=ramips%2Fmt7621&id=netis_n6" target="_blank">ПЕРЕЙТИ К СБОРКЕ</a>  
 Самые необходимые базовые пакеты:  
 ```
 base-files ca-bundle dnsmasq dropbear firewall4 fstools kmod-nft-offload libc libgcc libustream-mbedtls logd mtd netifd nftables opkg procd uci uclient-fetch urandom-seed urngd wpad-basic-mbedtls kmod-mt7915-firmware kmod-usb3 kmod-crypto-hw-eip93
